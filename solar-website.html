@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aadhya Solar | Best Solar Panel Manufacturer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="https://aadhya-solar.com/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- LOADER -->
+<!-- <div id="loader">
+  <div class="loader-logo">AADHYA SOLAR</div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div> -->
+
+<!-- BACK TO TOP -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- TOAST -->
+<div class="toast" id="toast">
+  <i class="fas fa-check-circle"></i>
+  <div class="toast-msg">Message sent successfully! We'll reach out soon.</div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="logo-icon">☀️</div>
+    <span class="logo-text">AADHYA SOLAR</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li class="dropdown">
+      <a href="#about">About ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#values">Our Values</a></li>
+        <li><a href="#stats">Impact</a></li>
+      </ul>
+    </li>
+    <li class="dropdown">
+      <a href="#technology">Why Us ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#products">Products</a></li>
+      </ul>
+    </li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#global">Global</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero">Home</a>
+  <a href="#about">About Us</a>
+  <a href="#products">Products</a>
+  <a href="#technology">Technology</a>
+  <a href="#values">Our Values</a>
+  <a href="#global">Global Presence</a>
+  <a href="#blog">Blog</a>
+  <a href="#contact">Contact Us</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="https://media.istockphoto.com/id/1159692743/video/4k-aerial-view-of-solar-panels-farm-with-sunlight.mp4?s=mp4-640x640-is&k=20&c=F6_BeUeNIaxP8rGFiPP_P6hZ1piFZ42ih3FQfMgGiqs=" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-grid"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-badge"><span></span> India's Leading Solar Manufacturer</div>
+      <h1 class="hero-title">
+        Powering Tomorrow<br>
+        <span class="highlight">With Solar</span>
+        Energy
+      </h1>
+      <p class="hero-desc">
+        Aadhya Solar delivers world-class solar PV modules with cutting-edge TOPCon technology. 
+        Trusted by 5000+ customers across India and 30+ countries worldwide.
+      </p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn-primary">
+          <i class="fas fa-solar-panel"></i> Explore Products
+        </a>
+        <a href="#contact" class="btn-outline">
+          <i class="fas fa-phone"></i> Get Free Quote
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="12">0</div>
+          <div class="hero-stat-label">GW Production Capacity</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="5000">0</div>
+          <div class="hero-stat-label">Happy Customers</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-num" data-count="30">0</div>
+          <div class="hero-stat-label">Countries Served</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="solar-panel-3d">
+        <div class="panel-bg">
+          <svg class="panel-grid-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Solar panel grid -->
+            <rect width="400" height="300" fill="#0a1628" rx="12"/>
+            <rect x="10" y="10" width="380" height="280" fill="#0d1e35" rx="8"/>
+            <!-- Grid lines horizontal -->
+            <line x1="10" y1="85" x2="390" y2="85" stroke="#1a3a5c" stroke-width="1.5"/>
+            <line x1="10" y1="158" x2="390" y2="158" stroke="#1a3a5c" stroke-width="1.5"/>
+            <line x1="10" y1="231" x2="390" y2="231" stroke="#1a3a5c" stroke-width="1.5"/>
+            <!-- Grid lines vertical -->
+            <line x1="82" y1="10" x2="82" y2="290" stroke="#1a3a5c" stroke-width="1.5"/>
+            <line x1="154" y1="10" x2="154" y2="290" stroke="#1a3a5c" stroke-width="1.5"/>
+            <line x1="226" y1="10" x2="226" y2="290" stroke="#1a3a5c" stroke-width="1.5"/>
+            <line x1="298" y1="10" x2="298" y2="290" stroke="#1a3a5c" stroke-width="1.5"/>
+            <!-- Cell shading -->
+            <rect x="14" y="14" width="64" height="67" fill="#0f2744" rx="3" opacity="0.9"/>
+            <rect x="86" y="14" width="64" height="67" fill="#122a4a" rx="3" opacity="0.9"/>
+            <rect x="158" y="14" width="64" height="67" fill="#0f2744" rx="3" opacity="0.9"/>
+            <rect x="230" y="14" width="64" height="67" fill="#112847" rx="3" opacity="0.9"/>
+            <rect x="302" y="14" width="84" height="67" fill="#0f2744" rx="3" opacity="0.9"/>
+            <!-- Row 2 -->
+            <rect x="14" y="89" width="64" height="65" fill="#112847" rx="3" opacity="0.9"/>
+            <rect x="86" y="89" width="64" height="65" fill="#0f2744" rx="3" opacity="0.9"/>
+            <rect x="158" y="89" width="64" height="65" fill="#122a4a" rx="3" opacity="0.9"/>
+            <rect x="230" y="89" width="64" height="65" fill="#0f2744" rx="3" opacity="0.9"/>
+            <rect x="302" y="89" width="84" height="65" fill="#112847" rx="3" opacity="0.9"/>
+            <!-- Row 3 -->
+            <rect x="14" y="162" width="64" height="65" fill="#0f2744" rx="3" opacity="0.9"/>
+            <rect x="86" y="162" width="64" height="65" fill="#122a4a" rx="3" opacity="0.9"/>
+            <rect x="158" y="162" width="64" height="65" fill="#0f2744" rx="3" opacity="0.9"/>
+            <rect x="230" y="162" width="64" height="65" fill="#112847" rx="3" opacity="0.9"/>
+            <rect x="302" y="162" width="84" height="65" fill="#0f2744" rx="3" opacity="0.9"/>
+            <!-- Row 4 -->
+            <rect x="14" y="235" width="64" height="51" fill="#122a4a" rx="3" opacity="0.9"/>
+            <rect x="86" y="235" width="64" height="51" fill="#0f2744" rx="3" opacity="0.9"/>
+            <rect x="158" y="235" width="64" height="51" fill="#112847" rx="3" opacity="0.9"/>
+            <rect x="230" y="235" width="64" height="51" fill="#0f2744" rx="3" opacity="0.9"/>
+            <rect x="302" y="235" width="84" height="51" fill="#122a4a" rx="3" opacity="0.9"/>
+            <!-- Glow lines -->
+            <line x1="10" y1="10" x2="390" y2="10" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+            <line x1="10" y1="290" x2="390" y2="290" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+            <line x1="10" y1="10" x2="10" y2="290" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+            <line x1="390" y1="10" x2="390" y2="290" stroke="#f59e0b" stroke-width="1" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="sun-animation">
+          <div class="sun-core"></div>
+          <div class="sun-ray" style="transform: rotate(0deg) translateX(-50%)"></div>
+          <div class="sun-ray" style="transform: rotate(45deg) translateX(-50%)"></div>
+          <div class="sun-ray" style="transform: rotate(90deg) translateX(-50%)"></div>
+          <div class="sun-ray" style="transform: rotate(135deg) translateX(-50%)"></div>
+          <div class="sun-ray" style="transform: rotate(180deg) translateX(-50%)"></div>
+          <div class="sun-ray" style="transform: rotate(225deg) translateX(-50%)"></div>
+          <div class="sun-ray" style="transform: rotate(270deg) translateX(-50%)"></div>
+          <div class="sun-ray" style="transform: rotate(315deg) translateX(-50%)"></div>
+        </div>
+        <div class="floating-card">
+          <div class="fc-label">Efficiency</div>
+          <div class="fc-value">23.5%</div>
+          <div class="fc-sub">TOPCon Technology</div>
+        </div>
+        <div class="floating-card">
+          <div class="fc-label">CO₂ Saved</div>
+          <div class="fc-value">1M+</div>
+          <div class="fc-sub">Tons Annually</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+    <span class="scroll-text">Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item"><i class="fas fa-sun"></i> TOPCon Technology</span>
+    <span class="marquee-item"><i class="fas fa-leaf"></i> Zero Carbon Future</span>
+    <span class="marquee-item"><i class="fas fa-bolt"></i> 23.5% Efficiency</span>
+    <span class="marquee-item"><i class="fas fa-globe"></i> 30+ Countries</span>
+    <span class="marquee-item"><i class="fas fa-award"></i> ISO 9001 Certified</span>
+    <span class="marquee-item"><i class="fas fa-shield-alt"></i> 25 Year Warranty</span>
+    <span class="marquee-item"><i class="fas fa-sun"></i> 12 GW Capacity</span>
+    <span class="marquee-item"><i class="fas fa-star"></i> Since 2015</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="marquee-item"><i class="fas fa-sun"></i> TOPCon Technology</span>
+    <span class="marquee-item"><i class="fas fa-leaf"></i> Zero Carbon Future</span>
+    <span class="marquee-item"><i class="fas fa-bolt"></i> 23.5% Efficiency</span>
+    <span class="marquee-item"><i class="fas fa-globe"></i> 30+ Countries</span>
+    <span class="marquee-item"><i class="fas fa-award"></i> ISO 9001 Certified</span>
+    <span class="marquee-item"><i class="fas fa-shield-alt"></i> 25 Year Warranty</span>
+    <span class="marquee-item"><i class="fas fa-sun"></i> 12 GW Capacity</span>
+    <span class="marquee-item"><i class="fas fa-star"></i> Since 2015</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-container">
+    <div class="about-grid">
+      <div class="about-image-wrap reveal">
+        <div class="about-main-img">
+          <svg viewBox="0 0 500 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:90%">
+            <!-- Factory background -->
+            <rect width="500" height="380" fill="#0a1628"/>
+            <!-- Building -->
+            <rect x="60" y="180" width="380" height="170" fill="#0d1e35" rx="6"/>
+            <rect x="60" y="155" width="380" height="30" fill="#112847" rx="3"/>
+            <!-- Roof solar panels -->
+            <rect x="80" y="100" width="340" height="60" fill="#0f2744" rx="4"/>
+            <line x1="80" y1="120" x2="420" y2="120" stroke="#1a3a5c" stroke-width="1.5"/>
+            <line x1="80" y1="140" x2="420" y2="140" stroke="#1a3a5c" stroke-width="1.5"/>
+            <line x1="164" y1="100" x2="164" y2="160" stroke="#1a3a5c" stroke-width="1.5"/>
+            <line x1="248" y1="100" x2="248" y2="160" stroke="#1a3a5c" stroke-width="1.5"/>
+            <line x1="332" y1="100" x2="332" y2="160" stroke="#1a3a5c" stroke-width="1.5"/>
+            <!-- Windows -->
+            <rect x="90" y="185" width="50" height="40" fill="#1a3a5c" rx="4"/>
+            <rect x="160" y="185" width="50" height="40" fill="#1a3a5c" rx="4"/>
+            <rect x="230" y="185" width="50" height="40" fill="#1a3a5c" rx="4"/>
+            <rect x="300" y="185" width="50" height="40" fill="#1a3a5c" rx="4"/>
+            <rect x="370" y="185" width="50" height="40" fill="#1a3a5c" rx="4"/>
+            <!-- Door -->
+            <rect x="210" y="290" width="80" height="60" fill="#0d1e35" rx="4"/>
+            <!-- Sun glow -->
+            <circle cx="430" cy="60" r="45" fill="none" stroke="#f59e0b" stroke-width="1" opacity="0.4"/>
+            <circle cx="430" cy="60" r="30" fill="#f59e0b" opacity="0.15"/>
+            <circle cx="430" cy="60" r="18" fill="#f59e0b" opacity="0.25"/>
+            <!-- Energy beams -->
+            <line x1="400" y1="85" x2="320" y2="130" stroke="#f59e0b" stroke-width="1.5" opacity="0.5" stroke-dasharray="5 5"/>
+            <line x1="390" y1="75" x2="240" y2="125" stroke="#f59e0b" stroke-width="1.5" opacity="0.5" stroke-dasharray="5 5"/>
+            <!-- Green trees -->
+            <circle cx="30" cy="290" r="25" fill="#10b981" opacity="0.5"/>
+            <rect x="26" y="305" width="8" height="20" fill="#10b981" opacity="0.5"/>
+            <circle cx="475" cy="290" r="25" fill="#10b981" opacity="0.5"/>
+            <rect x="471" y="305" width="8" height="20" fill="#10b981" opacity="0.5"/>
+            <!-- Company text -->
+            <text x="250" y="355" text-anchor="middle" fill="#f59e0b" font-size="14" font-family="Arial" font-weight="bold" opacity="0.7">AADHYA SOLAR MANUFACTURING</text>
+          </svg>
+        </div>
+        <div class="about-accent">
+          <div class="about-accent-num">2015</div>
+          <div class="about-accent-txt">Est. Year</div>
+        </div>
+      </div>
+      <div class="reveal" style="transition-delay:0.15s">
+        <div class="section-tag">About Us</div>
+        <h2 class="section-title">We're Aadhya <span>Solar</span></h2>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.65); font-size:0.95rem; line-height:1.8; margin-bottom:10px;">
+          Aadhya Solar is India's fastest-growing solar panel manufacturer, delivering innovative clean energy solutions since 2015. With a production capacity of 12 GW using the latest TOPCon technology, we've earned the trust of over 5,000 customers globally.
+        </p>
+        <p style="color:rgba(255,255,255,0.65); font-size:0.95rem; line-height:1.8; margin-bottom:24px;">
+          From rooftops to large utility-scale projects, our high-performance solar modules are powering homes, industries, and communities across India and 30+ countries worldwide.
+        </p>
+        <ul class="about-features">
+          <li class="about-feature">
+            <div class="af-icon"><i class="fas fa-microchip"></i></div>
+            <div>
+              <div class="af-title">Next-Gen TOPCon Technology</div>
+              <div class="af-desc">Industry-leading efficiency of up to 23.5% for maximum energy yield per panel.</div>
+            </div>
+          </li>
+          <li class="about-feature">
+            <div class="af-icon"><i class="fas fa-certificate"></i></div>
+            <div>
+              <div class="af-title">International Certifications</div>
+              <div class="af-desc">IEC, BIS, MCS certified — meeting the highest global quality standards.</div>
+            </div>
+          </li>
+          <li class="about-feature">
+            <div class="af-icon"><i class="fas fa-headset"></i></div>
+            <div>
+              <div class="af-title">24/7 After-Sales Support</div>
+              <div class="af-desc">Dedicated support team ensuring your solar investment performs for decades.</div>
+            </div>
+          </li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="display:inline-flex; margin-top:28px;">
+          Learn More <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- TECHNOLOGY -->
+<section id="technology">
+  <div class="section-container">
+    <div class="tech-grid">
+      <div class="reveal">
+        <div class="section-tag">Technology</div>
+        <h2 class="section-title">Why Our Tech <span>Leads</span></h2>
+        <div class="divider"></div>
+        <p class="section-desc" style="margin-bottom:36px;">
+          We invest heavily in next-generation solar technology to deliver the highest efficiency and durability to our customers.
+        </p>
+        <div class="tech-features">
+          <div class="tech-feature active">
+            <div class="tech-num">01</div>
+            <div>
+              <div class="tech-title">TOPCon Cell Technology</div>
+              <div class="tech-desc">Tunnel Oxide Passivated Contact technology reduces energy loss at cell surfaces, delivering industry-leading 23.5% efficiency.</div>
+            </div>
+          </div>
+          <div class="tech-feature">
+            <div class="tech-num">02</div>
+            <div>
+              <div class="tech-title">Half-Cut Cell Design</div>
+              <div class="tech-desc">Cells cut in half reduce resistance losses and improve shading tolerance — generating more power in real conditions.</div>
+            </div>
+          </div>
+          <div class="tech-feature">
+            <div class="tech-num">03</div>
+            <div>
+              <div class="tech-title">Anti-PID Technology</div>
+              <div class="tech-desc">Anti-Potential Induced Degradation ensures long-term performance stability, protecting your investment for 25+ years.</div>
+            </div>
+          </div>
+          <div class="tech-feature">
+            <div class="tech-num">04</div>
+            <div>
+              <div class="tech-title">Low Light Performance</div>
+              <div class="tech-desc">Advanced cell architecture ensures excellent output even in cloudy conditions and at dawn/dusk.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tech-visual reveal" style="transition-delay:0.2s">
+        <div class="tech-circle">
+          <div class="orbit-dot"></div>
+          <div class="tech-circle-inner">
+            <div class="orbit-dot-blue" style="position:absolute; top:-6px; left:calc(50% - 6px); width:12px; height:12px; border-radius:50%; background:#0ea5e9; box-shadow:0 0 12px #0ea5e9;"></div>
+            <div class="tech-center">☀️</div>
+          </div>
+        </div>
+        <div style="position:absolute; bottom:30px; left:50%; transform:translateX(-50%); text-align:center;">
+          <div style="font-family:'Bebas Neue',cursive; font-size:1.4rem; color:var(--sun); letter-spacing:2px;">TOPCON</div>
+          <div style="font-size:0.75rem; color:rgba(255,255,255,0.45);">Next Generation Solar</div>
+        </div>
+        <div style="position:absolute; top:30px; right:30px; text-align:right;">
+          <div style="font-size:0.7rem; color:rgba(255,255,255,0.4); letter-spacing:1px;">EFFICIENCY</div>
+          <div style="font-family:'Bebas Neue',cursive; font-size:2rem; color:var(--sun);">23.5%</div>
+        </div>
+        <div style="position:absolute; bottom:80px; left:30px;">
+          <div style="font-size:0.7rem; color:rgba(255,255,255,0.4); letter-spacing:1px;">WARRANTY</div>
+          <div style="font-family:'Bebas Neue',cursive; font-size:2rem; color:var(--sky);">25 YRS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-container">
+    <div style="text-align:center; margin-bottom:0;" class="reveal">
+      <div class="section-tag">Testimonials</div>
+      <h2 class="section-title">What Our <span>Customers Say</span></h2>
+    </div>
+    <div class="testimonials-track">
+      <div class="testi-card reveal">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Aadhya Solar panels have been running flawlessly for 3 years on our factory rooftop. Our electricity bill dropped by 70% and the ROI has been incredible. Their after-sales support is exceptional.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RK</div>
+          <div>
+            <div class="testi-name">Rajesh Kumar</div>
+            <div class="testi-role">Owner, Kumar Textiles, Surat</div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal" style="transition-delay:0.1s">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">We installed a 500kW system across our warehouses. The Aadhya Solar team handled everything professionally. The panels perform even better than promised, especially on cloudy days.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SP</div>
+          <div>
+            <div class="testi-name">Sunita Patel</div>
+            <div class="testi-role">Director, SunPower Logistics, Ahmedabad</div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal" style="transition-delay:0.2s">
+        <div class="testi-quote">"</div>
+        <p class="testi-text">As a solar developer in Germany, I've worked with many manufacturers. Aadhya Solar's TOPCon panels consistently outperform specs. Their quality control is at the highest European standard.</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MH</div>
+          <div>
+            <div class="testi-name">Marcus Heinrich</div>
+            <div class="testi-role">CEO, GreenVolt Energy, Germany</div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-container">
+    <div style="text-align:center; margin-bottom:60px;" class="reveal">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Start Your Solar <span>Journey Today</span></h2>
+      <p class="section-desc" style="margin: 0 auto;">Our experts will help you find the perfect solar solution for your home or business.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="cinfo-item">
+          <div class="cinfo-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="cinfo-label">Headquarters</div>
+            <div class="cinfo-value">Aadhya Solar Park, Surat - Hazira Road,<br>Surat, Gujarat 395007, India</div>
+          </div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <div class="cinfo-label">Phone</div>
+            <div class="cinfo-value">+91 98765 43210</div>
+          </div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="cinfo-label">Email</div>
+            <div class="cinfo-value">info@aadhyasolar.in</div>
+          </div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <div class="cinfo-label">Business Hours</div>
+            <div class="cinfo-value">Mon–Sat: 9:00 AM – 6:00 PM IST</div>
+          </div>
+        </div>
+        <div style="margin-top:10px;">
+          <h4 style="font-size:0.85rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--sun); margin-bottom:14px;">Follow Us</h4>
+          <div style="display:flex; gap:10px;">
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal" style="transition-delay:0.15s">
+        <div class="form-title">Request a Free Quote</div>
+        <div class="form-sub">Fill in the form and our team will contact you within 24 hours.</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" id="fname" placeholder="Rahul">
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" id="lname" placeholder="Patel">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email *</label>
+            <input type="email" id="email" placeholder="rahul@example.com">
+          </div>
+          <div class="form-group">
+            <label>Phone *</label>
+            <input type="tel" id="phone" placeholder="+91 98765 43210">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Interested In</label>
+          <select id="interest">
+            <option value="">Select a product/service</option>
+            <option>Residential Solar System</option>
+            <option>Commercial Solar System</option>
+            <option>Industrial Solar System</option>
+            <option>Solar Panel Supply</option>
+            <option>Solar + Storage Solution</option>
+            <option>Rooftop Solar Installation</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea id="message" placeholder="Tell us about your project, location, current electricity bill, roof size, etc."></textarea>
+        </div>
+        <button class="btn-submit" onclick="submitForm()">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="margin-bottom:4px; display:inline-flex;">
+        <div class="logo-icon">☀️</div>
+        <span class="logo-text">AADHYA SOLAR</span>
+      </a>
+      <p>India's leading solar panel manufacturer. Delivering clean, reliable, and affordable solar energy solutions since 2015. Together, let's build a sustainable future.</p>
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#values">Our Values</a></li>
+        <li><a href="#stats">Impact</a></li>
+        <li><a href="#global">Global Presence</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Investor Relations</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#products">TopSun Pro 580W</a></li>
+        <li><a href="#products">Bifacial 600W</a></li>
+        <li><a href="#products">HomeShine 400W</a></li>
+        <li><a href="#products">Industrial 700W</a></li>
+        <li><a href="#products">AgriSolar 450W</a></li>
+        <li><a href="#products">Solar + Storage Kit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#blog">Blog & News</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="#">Datasheets</a></li>
+        <li><a href="#">Warranty Policy</a></li>
+        <li><a href="#">Installer Network</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="max-width:1200px; margin:0 auto; margin-bottom:20px; padding:20px 0; border-top:1px solid rgba(255,255,255,0.05); display:flex; gap:12px; flex-wrap:wrap;">
+    <div style="display:flex; align-items:center; gap:8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:8px 16px; border-radius:8px; font-size:0.78rem; color:rgba(255,255,255,0.5);">
+      <span>🏆</span> ISO 9001:2015 Certified
+    </div>
+    <div style="display:flex; align-items:center; gap:8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:8px 16px; border-radius:8px; font-size:0.78rem; color:rgba(255,255,255,0.5);">
+      <span>✅</span> BIS Certified
+    </div>
+    <div style="display:flex; align-items:center; gap:8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:8px 16px; border-radius:8px; font-size:0.78rem; color:rgba(255,255,255,0.5);">
+      <span>🌐</span> IEC 61215 Certified
+    </div>
+    <div style="display:flex; align-items:center; gap:8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); padding:8px 16px; border-radius:8px; font-size:0.78rem; color:rgba(255,255,255,0.5);">
+      <span>🛡️</span> MCS Certified (UK)
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Aadhya Solar Energies Pvt. Ltd. All rights reserved.</span>
+    <span>Made with ☀️ in India | <a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
