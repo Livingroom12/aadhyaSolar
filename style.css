@@ -59,7 +59,7 @@ nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   padding: 0 5%;
   display: flex; align-items: center; justify-content: space-between;
-  height: 72px;
+  height: 90px;
   background: rgba(10, 15, 30, 0.85);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(245,158,11,0.15);
@@ -67,11 +67,25 @@ nav {
 }
 nav.scrolled {
   background: rgba(10, 15, 30, 0.97);
-  height: 64px;
+  height: 80px;
 }
 .nav-logo {
-  display: flex; align-items: center; gap: 10px;
+   display: flex;
+  align-items: center;
+  gap: 10px;           /* logo ane text vacche space */
   text-decoration: none;
+  flex-shrink: 0;
+}
+.nav-logo-img {
+  height: 121px !important;        /* 55px thi vadharીne 75px */
+  width: auto;
+  object-fit: contain;
+  display: block; 
+  transition: all 0.3s;
+}
+.nav-logo-img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(245,158,11,0.5));
 }
 .logo-icon {
   width: 40px; height: 40px;
@@ -163,7 +177,7 @@ nav.scrolled {
   position: relative; min-height: 100vh;
   display: flex; align-items: center;
   overflow: hidden;
-  padding-top: 72px;
+  padding-top: 90px;
 }
 .hero-bg {
   position: absolute; inset: 0;
@@ -224,7 +238,8 @@ nav.scrolled {
   font-size: clamp(3rem, 6vw, 5.5rem);
   line-height: 1;
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
   animation: fadeInUp 0.7s ease 0.1s both;
 }
 .hero-title .highlight {
@@ -826,6 +841,9 @@ footer {
   max-width: 1200px; margin: 0 auto;
   display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 50px; margin-bottom: 50px;
+}
+.footer-brand .nav-logo-img {
+  height: 80px;
 }
 .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.7; margin: 16px 0 22px; max-width: 280px; }
 .social-links { display: flex; gap: 10px; }
