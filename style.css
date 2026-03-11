@@ -861,12 +861,18 @@ footer {
 .footer-col ul a { color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
 .footer-col ul a:hover { color: var(--white); }
 .footer-bottom {
-  max-width: 1200px; margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
   padding-top: 24px;
   border-top: 1px solid rgba(255,255,255,0.07);
-  display: flex; justify-content: space-between; align-items: center;
-  font-size: 0.8rem; color: rgba(255,255,255,0.35);
-  flex-wrap: wrap; gap: 10px;
+
+  display: flex;
+  justify-content: center;   /* center */
+  align-items: center;
+  text-align: center;        /* text center */
+
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.35);
 }
 .footer-bottom a { color: var(--sun); text-decoration: none; }
 
