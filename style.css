@@ -82,7 +82,7 @@ nav.scrolled {
   align-items: center;
 }
 .nav-logo img{
-  height:75px;
+  height:100px;
   width:auto;
   object-fit:contain;
 }
