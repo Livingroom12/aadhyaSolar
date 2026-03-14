@@ -8,29 +8,41 @@ menuToggle.addEventListener('click', function () {
 
 const slider = document.getElementById("testimonialSlider");
 const cards = document.querySelectorAll(".testimonial-card");
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
 
 let index = 0;
 
-function moveSlider(){
-  const cardWidth = cards[0].offsetWidth + 25; // card width + gap
+function updateSlider(){
+
+  const cardWidth = cards[0].offsetWidth + 25; // gap
+
   slider.style.transform = `translateX(-${index * cardWidth}px)`;
+
+  cards.forEach(card => card.classList.remove("active"));
+
+  if(cards[index]){
+    cards[index].classList.add("active");
+  }
 }
 
-document.querySelector(".next").onclick = () => {
+next.addEventListener("click", ()=>{
+
   if(index < cards.length - 1){
     index++;
-    moveSlider();
+    updateSlider();
   }
-}
 
-document.querySelector(".prev").onclick = () => {
+});
+
+prev.addEventListener("click", ()=>{
+
   if(index > 0){
     index--;
-    moveSlider();
+    updateSlider();
   }
-}
 
-window.addEventListener("resize", moveSlider);
+});
 
 
 const faqs = document.querySelectorAll(".faq-item");
