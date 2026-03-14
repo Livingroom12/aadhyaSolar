@@ -8,34 +8,29 @@ menuToggle.addEventListener('click', function () {
 
 const slider = document.getElementById("testimonialSlider");
 const cards = document.querySelectorAll(".testimonial-card");
-const next = document.querySelector(".next");
-const prev = document.querySelector(".prev");
 
 let index = 0;
 
-function updateSlider(){
-  slider.style.transform = `translateX(-${index * 325}px)`;
+function moveSlider(){
+  const cardWidth = cards[0].offsetWidth + 25; // card width + gap
+  slider.style.transform = `translateX(-${index * cardWidth}px)`;
+}
 
-  cards.forEach(card => card.classList.remove("active"));
-
-  if(cards[index+1]){
-    cards[index+1].classList.add("active");
+document.querySelector(".next").onclick = () => {
+  if(index < cards.length - 1){
+    index++;
+    moveSlider();
   }
 }
 
-next.addEventListener("click", ()=>{
-  if(index < cards.length-3){
-    index++;
-    updateSlider();
-  }
-});
-
-prev.addEventListener("click", ()=>{
+document.querySelector(".prev").onclick = () => {
   if(index > 0){
     index--;
-    updateSlider();
+    moveSlider();
   }
-});
+}
+
+window.addEventListener("resize", moveSlider);
 
 
 const faqs = document.querySelectorAll(".faq-item");
