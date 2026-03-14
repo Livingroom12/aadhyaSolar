@@ -618,20 +618,78 @@ font-size:15px;
 
 /* mobile */
 
-@media(max-width:768px){
+/* ===== FOOTER RESPONSIVE ===== */
+
+/* Tablet */
+@media (max-width: 992px) {
 
   .footer-container{
-    grid-template-columns: 1fr; /* mobile પર single column */
+    grid-template-columns: 1fr 1fr; /* 2 column */
+    gap: 30px;
   }
 
-.footer-col h3::after{
-  margin:auto;
-  margin-top:6px;
+  .logo-col{
+    grid-column: span 2; /* logo full width */
+    text-align: center;
+    align-items: center;
+  }
+
 }
 
-.social-icons{
-  justify-content:center;
+/* Mobile */
+@media (max-width: 768px){
+
+  .solar-footer{
+    padding:50px 6% 20px;
+  }
+
+  .footer-container{
+    grid-template-columns: 1fr; /* single column */
+    text-align:center;
+    gap:30px;
+  }
+
+  .logo-col{
+    align-items:center;
+  }
+
+  .footer-logo{
+    width:120px;
+  }
+
+  .footer-col h3::after{
+    margin:auto;
+    margin-top:6px;
+  }
+
+  .social-icons{
+    display:flex;
+    justify-content:center;
+  }
+
 }
+
+/* Small Mobile */
+@media (max-width:480px){
+
+  .footer-logo{
+    width:100px;
+  }
+
+  .footer-col h3{
+    font-size:16px;
+  }
+
+  .footer-col p,
+  .footer-col ul li a{
+    font-size:13px;
+  }
+
+  .social-icons a{
+    width:35px;
+    height:35px;
+    font-size:16px;
+  }
 
 }
 
