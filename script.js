@@ -4,30 +4,13 @@
 })();
 
 // ===== Navbar Toggle =====
-// ===== Navbar Toggle =====
+
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 
 if (menuToggle && navLinks) {
   menuToggle.addEventListener('click', function () {
-    navLinks.classList.toggle('open');
-    menuToggle.classList.toggle('active'); // optional: animate hamburger icon
-  });
-
-  // ✅ Close menu when a nav link is clicked (mobile UX)
-  document.querySelectorAll('#navLinks a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      menuToggle.classList.remove('active');
-    });
-  });
-
-  // ✅ Close menu when clicking outside
-  document.addEventListener('click', function (e) {
-    if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
-      navLinks.classList.remove('open');
-      menuToggle.classList.remove('active');
-    }
+    navLinks.classList.toggle('active'); // 'open' → 'active' કર્યું
   });
 }
 
