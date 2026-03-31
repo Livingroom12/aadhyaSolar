@@ -5,14 +5,20 @@
 
 // ===== Navbar Toggle =====
 
-const menuToggle = document.getElementById('menuToggle');
-const navLinks = document.getElementById('navLinks');
+fetch('navbar.html')
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById('navbar').innerHTML = data;
 
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener('click', function () {
-    navLinks.classList.toggle('active'); // 'open' → 'active' કર્યું
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+    }
   });
-}
 
 // ===== Testimonial Slider =====
 const slider = document.getElementById("testimonialSlider");
