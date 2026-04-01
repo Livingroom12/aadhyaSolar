@@ -10,6 +10,7 @@ fetch('navbar.html')
   .then(data => {
     document.getElementById('navbar').innerHTML = data;
 
+    // ✅ IMPORTANT: Navbar load pachi j select karo
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
 
