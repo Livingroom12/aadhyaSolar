@@ -429,38 +429,62 @@
 
 /* MOBILE RESPONSIVE */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-.testimonials{
-  padding:60px 5%;
+  .testimonials {
+    padding: 40px 15px;
+  }
+
+  .testimonials h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-wrapper {
+  overflow: hidden; /* aa line hovu joiye */
+  position: relative;
 }
 
-.testimonials h2{
-  font-size:26px;
-}
+  .testimonial-slider {
+    display: flex;
+    gap: 0;
+    transition: transform 0.5s ease;
+  }
 
-.testimonial-slider{
-  gap:15px;
-}
+  .testimonial-card {
+    min-width: calc(100% - 70px);  /* ← arrows ની જગ્યા બાદ */
+    width: calc(100% - 70px);
+    margin: 0 35px;                /* ← બન્ને બાજુ 35px = arrow space */
+    padding: 25px 20px;
+    box-sizing: border-box;
+    transform: scale(1);
+    opacity: 1;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  }
 
-.testimonial-card{
-  min-width:85%;   /* mobile screen મુજબ */
-  margin:auto;
-}
+  .testimonial-card.active {
+    transform: scale(1);
+    opacity: 1;
+  }
 
-.slide-btn{
-  width:38px;
-  height:38px;
-  font-size:22px;
-}
+  .slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    z-index: 10;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
 
-.prev{
-  left:5px;
-}
-
-.next{
-  right:5px;
-}
+  .prev { left: 0; }
+  .next { right: 0; }
 
 }
 

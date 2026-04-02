@@ -22,35 +22,63 @@ fetch('navbar.html')
   });
 
 // ===== Testimonial Slider =====
+// ===== Testimonial Slider =====
+// ===== Testimonial Slider =====
 const slider = document.getElementById("testimonialSlider");
-const next = document.querySelector(".next");
-const prev = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
 
-if (slider && next && prev) {
+if (slider && nextBtn && prevBtn) {
   const cards = document.querySelectorAll(".testimonial-card");
   let index = 0;
 
-  function updateSlider() {
-    const cardWidth = cards[0].offsetWidth + 25;
-    slider.style.transform = `translateX(-${index * cardWidth}px)`;
-
-    cards.forEach(card => card.classList.remove("active"));
-    if (cards[index]) cards[index].classList.add("active");
+  function isMobile() {
+    return window.innerWidth <= 768;
   }
 
-  next.addEventListener("click", () => {
-    if (index < cards.length - 1) {
-      index++;
-      updateSlider();
+  function updateSlider() {
+    cards.forEach(card => card.classList.remove("active"));
+    if (cards[index]) cards[index].classList.add("active");
+
+    if (isMobile()) {
+      const cardWidth = cards[index].offsetWidth;
+  const cardMargin = 35;
+  const totalShift = index * (cardWidth + cardMargin * 2);
+  slider.style.transform = `translateX(-${totalShift}px)`;
+    } else {
+      // Desktop: center active card
+      const wrapper = document.querySelector(".testimonial-wrapper");
+      const wrapperWidth = wrapper.offsetWidth;
+      const card = cards[index];
+      const cardWidth = card.offsetWidth;
+      const gap = 25;
+
+      let offsetLeft = 0;
+      for (let i = 0; i < index; i++) {
+        offsetLeft += cards[i].offsetWidth + gap;
+      }
+
+      const centerOffset = offsetLeft - (wrapperWidth / 2) + (cardWidth / 2);
+      slider.style.transform = `translateX(-${centerOffset}px)`;
     }
+  }
+
+  nextBtn.addEventListener("click", () => {
+    index++;
+    if (index >= cards.length) index = 0;
+    updateSlider();
   });
 
-  prev.addEventListener("click", () => {
-    if (index > 0) {
-      index--;
-      updateSlider();
-    }
+  prevBtn.addEventListener("click", () => {
+    index--;
+    if (index < 0) index = cards.length - 1;
+    updateSlider();
   });
+
+  window.addEventListener("resize", () => updateSlider());
+
+  // Initial
+  updateSlider();
 }
 
 // ===== FAQ Accordion =====
