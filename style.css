@@ -897,7 +897,7 @@ body {
   }
 
   .logo img {
-    height: 90px; /* ✅ 95px ઘણું મોટું — navbar height 70px છે */
+    height: 85px; /* ✅ 95px ઘણું મોટું — navbar height 70px છે */
     width: auto;
     object-fit: contain;
   }
