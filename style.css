@@ -370,7 +370,7 @@ body {
 
 .testimonials {
   padding: 80px 8%;
-  background: #f5f7fa;
+  background: #f5f7fa; /* light grey */
   text-align: center;
 }
 
@@ -538,7 +538,7 @@ body {
 
 .faq {
   padding: 80px 8%;
-  background: #f5f7fa;
+   background: #ffffff; /* pure white */
 }
 
 .faq h2 {
