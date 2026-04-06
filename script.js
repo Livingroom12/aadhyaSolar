@@ -15,10 +15,10 @@ fetch('navbar.html')
     const navLinks = document.getElementById('navLinks');
 
     if (menuToggle && navLinks) {
-      menuToggle.addEventListener('click', function () {
-        navLinks.classList.toggle('active');
-      });
-    }
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  }
   });
 
 // ===== Testimonial Slider =====

@@ -882,22 +882,20 @@ body {
 
 
 /* ── MOBILE ── */
-/* Default desktop */
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
 
-/* Mobile view */
+
+
+
+  
 @media (max-width: 768px) {
 
   .navbar {
-    height: 70px;
+    height: 60px;
     padding: 0 16px;
   }
 
   .logo img {
-    height: 85px; /* ✅ 95px ઘણું મોટું — navbar height 70px છે */
+    height: 85px;
     width: auto;
     object-fit: contain;
   }
@@ -906,13 +904,14 @@ body {
     display: block;
   }
 
-  /* ✅ Hidden by default */
+
+
   .nav-links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;       /* ✅ absolute નહીં — fixed વાપરો */
-    top: 70px;             /* ✅ navbar height જેટલું */
+    position: fixed;
+    top: 60px;
     left: 0;
     width: 100%;
     background: #fff;
@@ -920,15 +919,13 @@ body {
     z-index: 999;
     padding: 10px 0;
     gap: 0;
-
-    /* ✅ Smooth animation */
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
     transition: all 0.3s ease;
   }
 
-  /* ✅ Active — show */
+  /* ✅ આ જ missing હતું! */
   .nav-links.active {
     opacity: 1;
     pointer-events: all;
