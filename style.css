@@ -891,29 +891,70 @@ body {
 /* Mobile view */
 @media (max-width: 768px) {
 
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-    background: #fff;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-    padding: 20px 0;
+  .navbar {
+    height: 70px;
+    padding: 0 16px;
   }
 
   .logo img {
-    height: 95px;
+    height: 90px; /* ✅ 95px ઘણું મોટું — navbar height 70px છે */
     width: auto;
     object-fit: contain;
   }
 
-  .nav-links.active {
-    display: flex;
-  }
-
   .menu-toggle {
     display: block;
+  }
+
+  /* ✅ Hidden by default */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;       /* ✅ absolute નહીં — fixed વાપરો */
+    top: 70px;             /* ✅ navbar height જેટલું */
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    padding: 10px 0;
+    gap: 0;
+
+    /* ✅ Smooth animation */
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  /* ✅ Active — show */
+  .nav-links.active {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links li a {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .nav-links li a:hover {
+    color: #f59e0b;
+    background: #fffbeb;
   }
 }
