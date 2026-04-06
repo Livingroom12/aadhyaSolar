@@ -846,7 +846,6 @@
 
 /* Mobile view */
 @media (max-width: 768px) {
-
   .menu-toggle {
     display: block;
   }
@@ -854,17 +853,18 @@
   .nav-links {
     position: absolute;
     top: 70px;
-    right: -100%; /* hide by default */
+    right: -100%;
     width: 100%;
     background: #fff;
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
-    transition: 0.3s ease;
+    transition: right 0.3s ease; /* specify 'right' for smoother transition */
+    display: flex; /* needs flex to respect flex-direction */
   }
 
   .nav-links.active {
-    right: 0; /* slide in */
+    right: 0;
   }
 
   .nav-links li {
