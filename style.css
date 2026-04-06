@@ -22,7 +22,6 @@
 /* LOGO FIX */
 .logo img {
   height: 107px;
-  /* 🔥 increase size */
   width: auto;
   object-fit: contain;
 }
@@ -848,23 +847,27 @@
 /* Mobile view */
 @media (max-width: 768px) {
 
+  .menu-toggle {
+    display: block;
+  }
+
   .nav-links {
     position: absolute;
     top: 70px;
-    right: 0;
+    right: -100%; /* hide by default */
     width: 100%;
     background: #fff;
     flex-direction: column;
     align-items: center;
-    display: none;
     padding: 20px 0;
+    transition: 0.3s ease;
   }
 
   .nav-links.active {
-    display: flex;
+    right: 0; /* slide in */
   }
 
-  .menu-toggle {
-    display: block;
+  .nav-links li {
+    margin: 10px 0;
   }
 }
