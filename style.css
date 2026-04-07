@@ -631,7 +631,7 @@ body {
 .solar-footer {
   background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
   border-top: 4px solid #ffb703;
-  padding: 70px 8% 20px;
+  padding: 40px 6% 24px; /* 60px → 40px */
   color: #1a1a2e;
 }
 
@@ -641,7 +641,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   margin-bottom: 40px;
-  align-items: start;
+  align-items: center; /* start → center */
 }
 
 /* logo */
@@ -652,12 +652,10 @@ body {
 }
 
 .footer-logo {
-  width: 160px;
-  /* desktop size */
-  height: 160px;
-  /* fix height */
+  width: 190px;  /* 110px → 130px */
+  height: 130px; /* 110px → 130px */
   object-fit: contain;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .logo-col h3 {
