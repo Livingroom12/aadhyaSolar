@@ -40,6 +40,40 @@ body {
   border-radius: 10px;
 }
 
+/* counter */
+
+.counter {
+  background: #0b1c2c;
+  padding: 60px 8%;
+  text-align: center;
+  color: #fff;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.counter-box {
+  flex: 1 1 200px;
+}
+
+.counter-box h2 {
+  font-size: 42px;
+  color: #00d084;
+  font-weight: 700;
+}
+
+.counter-box p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+
+
 
 /* NAVBAR */
 /* NAVBAR */
