@@ -43,7 +43,7 @@ body {
 /* counter */
 
 .counter {
-  background: #0b1c2c;
+ background: linear-gradient(135deg, #021b2e, #0a3d62);
   padding: 60px 8%;
   text-align: center;
   color: #fff;
@@ -72,7 +72,18 @@ body {
 }
 
 
+.counter-box i {
+  font-size: 32px;
+  color: #ff7a00;
+  margin-bottom: 12px;
+  display: block;
+}
 
+/* optional hover effect */
+.counter-box:hover i {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
 
 
 /* NAVBAR */
