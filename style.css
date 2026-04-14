@@ -106,7 +106,7 @@ body {
 
 /* LOGO FIX */
 .logo img {
-  height: 95px; /* ✅ 98px ઘણું મોટું હતું */
+  height: 85px; /* ✅ 98px ઘણું મોટું હતું */
   width: auto;
   object-fit: contain;
 }
@@ -938,7 +938,7 @@ body {
   }
 
   .logo img {
-    height: 75px;
+    height: 71px;
     width: auto;
     object-fit: contain;
   }
