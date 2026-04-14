@@ -141,3 +141,47 @@ if (form) {
       });
   });
 }
+
+
+
+// =================Counter========================
+
+
+
+const counters = document.querySelectorAll('.count');
+
+function runCounter() {
+  counters.forEach(counter => {
+    const target = parseFloat(counter.getAttribute('data-target'));
+    let count = 0;
+
+    const speed = 100;
+
+    function updateCount() {
+      const increment = target / speed;
+
+      if (count < target) {
+        count += increment;
+
+        if (target % 1 !== 0) {
+          counter.innerText = count.toFixed(1) + "+";
+        } else {
+          counter.innerText = Math.ceil(count) + "+";
+        }
+
+        setTimeout(updateCount, 20);
+      } else {
+        if (target % 1 !== 0) {
+          counter.innerText = target.toFixed(1) + "+";
+        } else {
+          counter.innerText = target + "+";
+        }
+      }
+    }
+
+    updateCount();
+  });
+}
+
+// ✅ Run when page loads
+window.addEventListener("load", runCounter);
