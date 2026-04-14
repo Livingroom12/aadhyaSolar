@@ -21,8 +21,7 @@ fetch('navbar.html')
   }
   });
 
-// ===== Testimonial Slider =====
-// ===== Testimonial Slider =====
+
 // ===== Testimonial Slider =====
 const slider = document.getElementById("testimonialSlider");
 const nextBtn = document.querySelector(".next");
